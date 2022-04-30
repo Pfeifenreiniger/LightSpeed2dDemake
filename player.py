@@ -77,10 +77,11 @@ ROW_6_COL_5_TO_6 = 528
 ROW_6_COL_6_TO_7 = 593
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, char, numb):
+    def __init__(self, char: str, numb: int, cpu: bool):
         super().__init__()
         self.char = char
         self.numb = numb
+        self.cpu = cpu
         self.player_reset()
 
     def load_imgs_down(self):
@@ -171,6 +172,24 @@ class Player(pygame.sprite.Sprite):
         elif self.row7:
             return 7
 
+    def return_column_number(self):
+        if self.column0:
+            return 0
+        elif self.column1:
+            return 1
+        elif self.column2:
+            return 2
+        elif self.column3:
+            return 3
+        elif self.column4:
+            return 4
+        elif self.column5:
+            return 5
+        elif self.column6:
+            return 6
+        elif self.column7:
+            return 7
+
     def set_columns(self):
         if self.numb == 1:
             self.column0 = True
@@ -187,85 +206,89 @@ class Player(pygame.sprite.Sprite):
 
     def set_cells(self):
         """active cells which represent the player's current score"""
-        self.cell_r1c1 = False  # row 1 column 1
-        self.cell_r1c2 = False  # row 1 column 2
-        self.cell_r1c3 = False  # row 1 column 3
-        self.cell_r1c4 = False  # row 1 column 4
-        self.cell_r1c5 = False
-        self.cell_r1c6 = False
-        self.cell_r2c1 = False
-        self.cell_r2c2 = False
-        self.cell_r2c3 = False
-        self.cell_r2c4 = False
-        self.cell_r2c5 = False
-        self.cell_r2c6 = False
-        self.cell_r3c1 = False
-        self.cell_r3c2 = False
-        self.cell_r3c3 = False
-        self.cell_r3c4 = False
-        self.cell_r3c5 = False
-        self.cell_r3c6 = False
-        self.cell_r4c1 = False
-        self.cell_r4c2 = False
-        self.cell_r4c3 = False
-        self.cell_r4c4 = False
-        self.cell_r4c5 = False
-        self.cell_r4c6 = False
-        self.cell_r5c1 = False
-        self.cell_r5c2 = False
-        self.cell_r5c3 = False
-        self.cell_r5c4 = False
-        self.cell_r5c5 = False
-        self.cell_r5c6 = False
-        self.cell_r6c1 = False
-        self.cell_r6c2 = False
-        self.cell_r6c3 = False
-        self.cell_r6c4 = False
-        self.cell_r6c5 = False
-        self.cell_r6c6 = False
+
+        self.cells = {
+            "r1c1": False,
+            "r1c2": False,
+            "r1c3": False,
+            "r1c4": False,
+            "r1c5": False,
+            "r1c6": False,
+            "r2c1": False,
+            "r2c2": False,
+            "r2c3": False,
+            "r2c4": False,
+            "r2c5": False,
+            "r2c6": False,
+            "r3c1": False,
+            "r3c2": False,
+            "r3c3": False,
+            "r3c4": False,
+            "r3c5": False,
+            "r3c6": False,
+            "r4c1": False,
+            "r4c2": False,
+            "r4c3": False,
+            "r4c4": False,
+            "r4c5": False,
+            "r4c6": False,
+            "r5c1": False,
+            "r5c2": False,
+            "r5c3": False,
+            "r5c4": False,
+            "r5c5": False,
+            "r5c6": False,
+            "r6c1": False,
+            "r6c2": False,
+            "r6c3": False,
+            "r6c4": False,
+            "r6c5": False,
+            "r6c6": False,
+        }
 
     def calculate_score(self):
-        self.cells = [
-            self.cell_r1c1,
-            self.cell_r1c2,
-            self.cell_r1c3,
-            self.cell_r1c4,
-            self.cell_r1c5,
-            self.cell_r1c6,
-            self.cell_r2c1,
-            self.cell_r2c2,
-            self.cell_r2c3,
-            self.cell_r2c4,
-            self.cell_r2c5,
-            self.cell_r2c6,
-            self.cell_r3c1,
-            self.cell_r3c2,
-            self.cell_r3c3,
-            self.cell_r3c4,
-            self.cell_r3c5,
-            self.cell_r3c6,
-            self.cell_r4c1,
-            self.cell_r4c2,
-            self.cell_r4c3,
-            self.cell_r4c4,
-            self.cell_r4c5,
-            self.cell_r4c6,
-            self.cell_r5c1,
-            self.cell_r5c2,
-            self.cell_r5c3,
-            self.cell_r5c4,
-            self.cell_r5c5,
-            self.cell_r5c6,
-            self.cell_r6c1,
-            self.cell_r6c2,
-            self.cell_r6c3,
-            self.cell_r6c4,
-            self.cell_r6c5,
-            self.cell_r6c6
-        ]
-        for cell in self.cells:
-            if cell == True:
-                self.score += 1
+        pass
+        # self.cells = [
+        #     self.cell_r1c1,
+        #     self.cell_r1c2,
+        #     self.cell_r1c3,
+        #     self.cell_r1c4,
+        #     self.cell_r1c5,
+        #     self.cell_r1c6,
+        #     self.cell_r2c1,
+        #     self.cell_r2c2,
+        #     self.cell_r2c3,
+        #     self.cell_r2c4,
+        #     self.cell_r2c5,
+        #     self.cell_r2c6,
+        #     self.cell_r3c1,
+        #     self.cell_r3c2,
+        #     self.cell_r3c3,
+        #     self.cell_r3c4,
+        #     self.cell_r3c5,
+        #     self.cell_r3c6,
+        #     self.cell_r4c1,
+        #     self.cell_r4c2,
+        #     self.cell_r4c3,
+        #     self.cell_r4c4,
+        #     self.cell_r4c5,
+        #     self.cell_r4c6,
+        #     self.cell_r5c1,
+        #     self.cell_r5c2,
+        #     self.cell_r5c3,
+        #     self.cell_r5c4,
+        #     self.cell_r5c5,
+        #     self.cell_r5c6,
+        #     self.cell_r6c1,
+        #     self.cell_r6c2,
+        #     self.cell_r6c3,
+        #     self.cell_r6c4,
+        #     self.cell_r6c5,
+        #     self.cell_r6c6
+        # ]
+        # for cell in self.cells:
+        #     if cell == True:
+        #         self.score += 1
 
     def scale_imgs(self):
         self.load_img_shadow()
@@ -356,7 +379,7 @@ class Player(pygame.sprite.Sprite):
                     self.key_direction = RIGHT
                     self.key_pressed = True
         # player 2: arrow keys
-        if self.numb == 2:
+        if self.numb == 2 and self.cpu != True:
             if self.key_pressed != True:
                 if self.keys[pygame.K_UP] and ((self.row6 != True) or (self.row6 and self.column1)) and \
                         self.row7 != True:

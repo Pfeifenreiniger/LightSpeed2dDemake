@@ -117,586 +117,586 @@ def tile_placement():
     # player 1 places tiles
     if p1_tile_r1c1.active != True and p2_tile_r1c1.active != True and p1.rect.colliderect(p1_tile_r1c1):
         p1_tile_r1c1.active = True
-        p1.cell_r1c1 = True
+        p1.cells["r1c1"] = True
     elif p1_tile_r1c2.active != True and p2_tile_r1c2.active != True and p1.rect.colliderect(p1_tile_r1c2):
         p1_tile_r1c2.active = True
-        p1.cell_r1c2 = True
+        p1.cells["r1c2"] = True
     elif p1_tile_r1c3.active != True and p2_tile_r1c3.active != True and p1.rect.colliderect(p1_tile_r1c3):
         p1_tile_r1c3.active = True
-        p1.cell_r1c3 = True
+        p1.cells["r1c3"] = True
     elif p1_tile_r1c4.active != True and p2_tile_r1c4.active != True and p1.rect.colliderect(p1_tile_r1c4):
         p1_tile_r1c4.active = True
-        p1.cell_r1c4 = True
+        p1.cells["r1c4"] = True
     elif p1_tile_r1c5.active != True and p2_tile_r1c5.active != True and p1.rect.colliderect(p1_tile_r1c5):
         p1_tile_r1c5.active = True
-        p1.cell_r1c5 = True
+        p1.cells["r1c5"] = True
     elif p1_tile_r1c6.active != True and p2_tile_r1c6.active != True and p1.rect.colliderect(p1_tile_r1c6):
         p1_tile_r1c6.active = True
-        p1.cell_r1c6 = True
+        p1.cells["r1c6"] = True
     elif p1_tile_r2c1.active != True and p2_tile_r2c1.active != True and p1.rect.colliderect(p1_tile_r2c1):
         p1_tile_r2c1.active = True
-        p1.cell_r2c1 = True
+        p1.cells["r2c1"] = True
     elif p1_tile_r2c2.active != True and p2_tile_r2c2.active != True and p1.rect.colliderect(p1_tile_r2c2):
         p1_tile_r2c2.active = True
-        p1.cell_r2c2 = True
+        p1.cells["r2c2"] = True
     elif p1_tile_r2c3.active != True and p2_tile_r2c3.active != True and p1.rect.colliderect(p1_tile_r2c3):
         p1_tile_r2c3.active = True
-        p1.cell_r2c3 = True
+        p1.cells["r2c3"] = True
     elif p1_tile_r2c4.active != True and p2_tile_r2c4.active != True and p1.rect.colliderect(p1_tile_r2c4):
         p1_tile_r2c4.active = True
-        p1.cell_r2c4 = True
+        p1.cells["r2c4"] = True
     elif p1_tile_r2c5.active != True and p2_tile_r2c5.active != True and p1.rect.colliderect(p1_tile_r2c5):
         p1_tile_r2c5.active = True
-        p1.cell_r2c5 = True
+        p1.cells["r2c5"] = True
     elif p1_tile_r2c6.active != True and p2_tile_r2c6.active != True and p1.rect.colliderect(p1_tile_r2c6):
         p1_tile_r2c6.active = True
-        p1.cell_r2c6 = True
+        p1.cells["r2c6"] = True
     if p1_tile_r3c1.active != True and p2_tile_r3c1.active != True and p1.rect.colliderect(p1_tile_r3c1):
         p1_tile_r3c1.active = True
-        p1.cell_r3c1 = True
+        p1.cells["r3c1"] = True
     elif p1_tile_r3c2.active != True and p2_tile_r3c2.active != True and p1.rect.colliderect(p1_tile_r3c2):
         p1_tile_r3c2.active = True
-        p1.cell_r3c2 = True
+        p1.cells["r3c2"] = True
     elif p1_tile_r3c3.active != True and p2_tile_r3c3.active != True and p1.rect.colliderect(p1_tile_r3c3):
         p1_tile_r3c3.active = True
-        p1.cell_r3c3 = True
+        p1.cells["r3c3"] = True
     elif p1_tile_r3c4.active != True and p2_tile_r3c4.active != True and p1.rect.colliderect(p1_tile_r3c4):
         p1_tile_r3c4.active = True
-        p1.cell_r3c4 = True
+        p1.cells["r3c4"] = True
     elif p1_tile_r3c5.active != True and p2_tile_r3c5.active != True and p1.rect.colliderect(p1_tile_r3c5):
         p1_tile_r3c5.active = True
-        p1.cell_r3c5 = True
+        p1.cells["r3c5"] = True
     elif p1_tile_r3c6.active != True and p2_tile_r3c6.active != True and p1.rect.colliderect(p1_tile_r3c6):
         p1_tile_r3c6.active = True
-        p1.cell_r3c6 = True
+        p1.cells["r3c6"] = True
     if p1_tile_r4c1.active != True and p2_tile_r4c1.active != True and p1.rect.colliderect(p1_tile_r4c1):
         p1_tile_r4c1.active = True
-        p1.cell_r4c1 = True
+        p1.cells["r4c1"] = True
     elif p1_tile_r4c2.active != True and p2_tile_r4c2.active != True and p1.rect.colliderect(p1_tile_r4c2):
         p1_tile_r4c2.active = True
-        p1.cell_r4c2 = True
+        p1.cells["r4c2"] = True
     elif p1_tile_r4c3.active != True and p2_tile_r4c3.active != True and p1.rect.colliderect(p1_tile_r4c3):
         p1_tile_r4c3.active = True
-        p1.cell_r4c3 = True
+        p1.cells["r4c3"] = True
     elif p1_tile_r4c4.active != True and p2_tile_r4c4.active != True and p1.rect.colliderect(p1_tile_r4c4):
         p1_tile_r4c4.active = True
-        p1.cell_r4c4 = True
+        p1.cells["r4c4"] = True
     elif p1_tile_r4c5.active != True and p2_tile_r4c5.active != True and p1.rect.colliderect(p1_tile_r4c5):
         p1_tile_r4c5.active = True
-        p1.cell_r4c5 = True
+        p1.cells["r4c5"] = True
     elif p1_tile_r4c6.active != True and p2_tile_r4c6.active != True and p1.rect.colliderect(p1_tile_r4c6):
         p1_tile_r4c6.active = True
-        p1.cell_r4c6 = True
+        p1.cells["r4c6"] = True
     if p1_tile_r5c1.active != True and p2_tile_r5c1.active != True and p1.rect.colliderect(p1_tile_r5c1):
         p1_tile_r5c1.active = True
-        p1.cell_r5c1 = True
+        p1.cells["r5c1"] = True
     elif p1_tile_r5c2.active != True and p2_tile_r5c2.active != True and p1.rect.colliderect(p1_tile_r5c2):
         p1_tile_r5c2.active = True
-        p1.cell_r5c2 = True
+        p1.cells["r5c2"] = True
     elif p1_tile_r5c3.active != True and p2_tile_r5c3.active != True and p1.rect.colliderect(p1_tile_r5c3):
         p1_tile_r5c3.active = True
-        p1.cell_r5c3 = True
+        p1.cells["r5c3"] = True
     elif p1_tile_r5c4.active != True and p2_tile_r5c4.active != True and p1.rect.colliderect(p1_tile_r5c4):
         p1_tile_r5c4.active = True
-        p1.cell_r5c4 = True
+        p1.cells["r5c4"] = True
     elif p1_tile_r5c5.active != True and p2_tile_r5c5.active != True and p1.rect.colliderect(p1_tile_r5c5):
         p1_tile_r5c5.active = True
-        p1.cell_r5c5 = True
+        p1.cells["r5c5"] = True
     elif p1_tile_r5c6.active != True and p2_tile_r5c6.active != True and p1.rect.colliderect(p1_tile_r5c6):
         p1_tile_r5c6.active = True
-        p1.cell_r5c6 = True
+        p1.cells["r5c6"] = True
     if p1_tile_r6c1.active != True and p2_tile_r6c1.active != True and p1.rect.colliderect(p1_tile_r6c1):
         p1_tile_r6c1.active = True
-        p1.cell_r6c1 = True
+        p1.cells["r6c1"] = True
     elif p1_tile_r6c2.active != True and p2_tile_r6c2.active != True and p1.rect.colliderect(p1_tile_r6c2):
         p1_tile_r6c2.active = True
-        p1.cell_r6c2 = True
+        p1.cells["r6c2"] = True
     elif p1_tile_r6c3.active != True and p2_tile_r6c3.active != True and p1.rect.colliderect(p1_tile_r6c3):
         p1_tile_r6c3.active = True
-        p1.cell_r6c3 = True
+        p1.cells["r6c3"] = True
     elif p1_tile_r6c4.active != True and p2_tile_r6c4.active != True and p1.rect.colliderect(p1_tile_r6c4):
         p1_tile_r6c4.active = True
-        p1.cell_r6c4 = True
+        p1.cells["r6c4"] = True
     elif p1_tile_r6c5.active != True and p2_tile_r6c5.active != True and p1.rect.colliderect(p1_tile_r6c5):
         p1_tile_r6c5.active = True
-        p1.cell_r6c5 = True
+        p1.cells["r6c5"] = True
     elif p1_tile_r6c6.active != True and p2_tile_r6c6.active != True and p1.rect.colliderect(p1_tile_r6c6):
         p1_tile_r6c6.active = True
-        p1.cell_r6c6 = True
+        p1.cells["r6c6"] = True
 
     # player 2 places tiles
     if p2_tile_r1c1.active != True and p1_tile_r1c1.active != True and p2.rect.colliderect(p2_tile_r1c1):
         p2_tile_r1c1.active = True
-        p2.cell_r1c1 = True
+        p2.cells["r1c1"] = True
     elif p2_tile_r1c2.active != True and p1_tile_r1c2.active != True and p2.rect.colliderect(p2_tile_r1c2):
         p2_tile_r1c2.active = True
-        p2.cell_r1c2 = True
+        p2.cells["r1c2"] = True
     elif p2_tile_r1c3.active != True and p1_tile_r1c3.active != True and p2.rect.colliderect(p2_tile_r1c3):
         p2_tile_r1c3.active = True
-        p2.cell_r1c3 = True
+        p2.cells["r1c3"] = True
     elif p2_tile_r1c4.active != True and p1_tile_r1c4.active != True and p2.rect.colliderect(p2_tile_r1c4):
         p2_tile_r1c4.active = True
-        p2.cell_r1c4 = True
+        p2.cells["r1c4"] = True
     elif p2_tile_r1c5.active != True and p1_tile_r1c5.active != True and p2.rect.colliderect(p2_tile_r1c5):
         p2_tile_r1c5.active = True
-        p2.cell_r1c5 = True
+        p2.cells["r1c5"] = True
     elif p2_tile_r1c6.active != True and p1_tile_r1c6.active != True and p2.rect.colliderect(p2_tile_r1c6):
         p2_tile_r1c6.active = True
-        p2.cell_r1c6 = True
+        p2.cells["r1c6"] = True
     elif p2_tile_r2c1.active != True and p1_tile_r2c1.active != True and p2.rect.colliderect(p2_tile_r2c1):
         p2_tile_r2c1.active = True
-        p2.cell_r2c1 = True
+        p2.cells["r2c1"] = True
     elif p2_tile_r2c2.active != True and p1_tile_r2c2.active != True and p2.rect.colliderect(p2_tile_r2c2):
         p2_tile_r2c2.active = True
-        p2.cell_r2c2 = True
+        p2.cells["r2c2"] = True
     elif p2_tile_r2c3.active != True and p1_tile_r2c3.active != True and p2.rect.colliderect(p2_tile_r2c3):
         p2_tile_r2c3.active = True
-        p2.cell_r2c3 = True
+        p2.cells["r2c3"] = True
     elif p2_tile_r2c4.active != True and p1_tile_r2c4.active != True and p2.rect.colliderect(p2_tile_r2c4):
         p2_tile_r2c4.active = True
-        p2.cell_r2c4 = True
+        p2.cells["r2c4"] = True
     elif p2_tile_r2c5.active != True and p1_tile_r2c5.active != True and p2.rect.colliderect(p2_tile_r2c5):
         p2_tile_r2c5.active = True
-        p2.cell_r2c5 = True
+        p2.cells["r2c5"] = True
     elif p2_tile_r2c6.active != True and p1_tile_r2c6.active != True and p2.rect.colliderect(p2_tile_r2c6):
         p2_tile_r2c6.active = True
-        p2.cell_r2c6 = True
+        p2.cells["r2c6"] = True
     if p2_tile_r3c1.active != True and p1_tile_r3c1.active != True and p2.rect.colliderect(p2_tile_r3c1):
         p2_tile_r3c1.active = True
-        p2.cell_r3c1 = True
+        p2.cells["r3c1"] = True
     elif p2_tile_r3c2.active != True and p1_tile_r3c2.active != True and p2.rect.colliderect(p2_tile_r3c2):
         p2_tile_r3c2.active = True
-        p2.cell_r3c2 = True
+        p2.cells["r3c2"] = True
     elif p2_tile_r3c3.active != True and p1_tile_r3c3.active != True and p2.rect.colliderect(p2_tile_r3c3):
         p2_tile_r3c3.active = True
-        p2.cell_r3c3 = True
+        p2.cells["r3c3"] = True
     elif p2_tile_r3c4.active != True and p1_tile_r3c4.active != True and p2.rect.colliderect(p2_tile_r3c4):
         p2_tile_r3c4.active = True
-        p2.cell_r3c4 = True
+        p2.cells["r3c4"] = True
     elif p2_tile_r3c5.active != True and p1_tile_r3c5.active != True and p2.rect.colliderect(p2_tile_r3c5):
         p2_tile_r3c5.active = True
-        p2.cell_r3c5 = True
+        p2.cells["r3c5"] = True
     elif p2_tile_r3c6.active != True and p1_tile_r3c6.active != True and p2.rect.colliderect(p2_tile_r3c6):
         p2_tile_r3c6.active = True
-        p2.cell_r3c6 = True
+        p2.cells["r3c6"] = True
     if p2_tile_r4c1.active != True and p1_tile_r4c1.active != True and p2.rect.colliderect(p2_tile_r4c1):
         p2_tile_r4c1.active = True
-        p2.cell_r4c1 = True
+        p2.cells["r4c1"] = True
     elif p2_tile_r4c2.active != True and p1_tile_r4c2.active != True and p2.rect.colliderect(p2_tile_r4c2):
         p2_tile_r4c2.active = True
-        p2.cell_r4c2 = True
+        p2.cells["r4c2"] = True
     elif p2_tile_r4c3.active != True and p1_tile_r4c3.active != True and p2.rect.colliderect(p2_tile_r4c3):
         p2_tile_r4c3.active = True
-        p2.cell_r4c3 = True
+        p2.cells["r4c3"] = True
     elif p2_tile_r4c4.active != True and p1_tile_r4c4.active != True and p2.rect.colliderect(p2_tile_r4c4):
         p2_tile_r4c4.active = True
-        p2.cell_r4c4 = True
+        p2.cells["r4c4"] = True
     elif p2_tile_r4c5.active != True and p1_tile_r4c5.active != True and p2.rect.colliderect(p2_tile_r4c5):
         p2_tile_r4c5.active = True
-        p2.cell_r4c5 = True
+        p2.cells["r4c5"] = True
     elif p2_tile_r4c6.active != True and p1_tile_r4c6.active != True and p2.rect.colliderect(p2_tile_r4c6):
         p2_tile_r4c6.active = True
-        p2.cell_r4c6 = True
+        p2.cells["r4c6"] = True
     if p2_tile_r5c1.active != True and p1_tile_r5c1.active != True and p2.rect.colliderect(p2_tile_r5c1):
         p2_tile_r5c1.active = True
-        p2.cell_r5c1 = True
+        p2.cells["r5c1"] = True
     elif p2_tile_r5c2.active != True and p1_tile_r5c2.active != True and p2.rect.colliderect(p2_tile_r5c2):
         p2_tile_r5c2.active = True
-        p2.cell_r5c2 = True
+        p2.cells["r5c2"] = True
     elif p2_tile_r5c3.active != True and p1_tile_r5c3.active != True and p2.rect.colliderect(p2_tile_r5c3):
         p2_tile_r5c3.active = True
-        p2.cell_r5c3 = True
+        p2.cells["r5c3"] = True
     elif p2_tile_r5c4.active != True and p1_tile_r5c4.active != True and p2.rect.colliderect(p2_tile_r5c4):
         p2_tile_r5c4.active = True
-        p2.cell_r5c4 = True
+        p2.cells["r5c4"] = True
     elif p2_tile_r5c5.active != True and p1_tile_r5c5.active != True and p2.rect.colliderect(p2_tile_r5c5):
         p2_tile_r5c5.active = True
-        p2.cell_r5c5 = True
+        p2.cells["r5c5"] = True
     elif p2_tile_r5c6.active != True and p1_tile_r5c6.active != True and p2.rect.colliderect(p2_tile_r5c6):
         p2_tile_r5c6.active = True
-        p2.cell_r5c6 = True
+        p2.cells["r5c6"] = True
     if p2_tile_r6c1.active != True and p1_tile_r6c1.active != True and p2.rect.colliderect(p2_tile_r6c1):
         p2_tile_r6c1.active = True
-        p2.cell_r6c1 = True
+        p2.cells["r6c1"] = True
     elif p2_tile_r6c2.active != True and p1_tile_r6c2.active != True and p2.rect.colliderect(p2_tile_r6c2):
         p2_tile_r6c2.active = True
-        p2.cell_r6c2 = True
+        p2.cells["r6c2"] = True
     elif p2_tile_r6c3.active != True and p1_tile_r6c3.active != True and p2.rect.colliderect(p2_tile_r6c3):
         p2_tile_r6c3.active = True
-        p2.cell_r6c3 = True
+        p2.cells["r6c3"] = True
     elif p2_tile_r6c4.active != True and p1_tile_r6c4.active != True and p2.rect.colliderect(p2_tile_r6c4):
         p2_tile_r6c4.active = True
-        p2.cell_r6c4 = True
+        p2.cells["r6c4"] = True
     elif p2_tile_r6c5.active != True and p1_tile_r6c5.active != True and p2.rect.colliderect(p2_tile_r6c5):
         p2_tile_r6c5.active = True
-        p2.cell_r6c5 = True
+        p2.cells["r6c5"] = True
     elif p2_tile_r6c6.active != True and p1_tile_r6c6.active != True and p2.rect.colliderect(p2_tile_r6c6):
         p2_tile_r6c6.active = True
-        p2.cell_r6c6 = True
+        p2.cells["r6c6"] = True
 
     # player 1 overwrites player 2 tiles
     if p2_tile_r1c1.active and p1.rect.colliderect(p2_tile_r1c1.rect):
         p2_tile_r1c1.active = False
-        p2.cell_r1c1 = False
+        p2.cells["r1c1"] = False
         p1_tile_r1c1.active = True
-        p1.cell_r1c1 = True
+        p1.cells["r1c1"] = True
     elif p2_tile_r1c2.active and p1.rect.colliderect(p2_tile_r1c2.rect):
         p2_tile_r1c2.active = False
-        p2.cell_r1c2 = False
+        p2.cells["r1c2"] = False
         p1_tile_r1c2.active = True
-        p1.cell_r1c2 = True
+        p1.cells["r1c2"] = True
     elif p2_tile_r1c3.active and p1.rect.colliderect(p2_tile_r1c3.rect):
         p2_tile_r1c3.active = False
-        p2.cell_r1c3 = False
+        p2.cells["r1c3"] = False
         p1_tile_r1c3.active = True
-        p1.cell_r1c3 = True
+        p1.cells["r1c3"] = True
     elif p2_tile_r1c4.active and p1.rect.colliderect(p2_tile_r1c4.rect):
         p2_tile_r1c4.active = False
-        p2.cell_r1c4 = False
+        p2.cells["r1c4"] = False
         p1_tile_r1c4.active = True
-        p1.cell_r1c4 = True
+        p1.cells["r1c4"] = True
     elif p2_tile_r1c5.active and p1.rect.colliderect(p2_tile_r1c5.rect):
         p2_tile_r1c5.active = False
-        p2.cell_r1c5 = False
+        p2.cells["r1c5"] = False
         p1_tile_r1c5.active = True
-        p1.cell_r1c5 = True
+        p1.cells["r1c5"] = True
     elif p2_tile_r1c6.active and p1.rect.colliderect(p2_tile_r1c6.rect):
         p2_tile_r1c6.active = False
-        p2.cell_r1c6 = False
+        p2.cells["r1c6"] = False
         p1_tile_r1c6.active = True
-        p1.cell_r1c6 = True
+        p1.cells["r1c6"] = True
     elif p2_tile_r2c1.active and p1.rect.colliderect(p2_tile_r2c1.rect):
         p2_tile_r2c1.active = False
-        p2.cell_r2c1 = False
+        p2.cells["r2c1"] = False
         p1_tile_r2c1.active = True
-        p1.cell_r2c1 = True
+        p1.cells["r2c1"] = True
     elif p2_tile_r2c2.active and p1.rect.colliderect(p2_tile_r2c2.rect):
         p2_tile_r2c2.active = False
-        p2.cell_r2c2 = False
+        p2.cells["r2c2"] = False
         p1_tile_r2c2.active = True
-        p1.cell_r2c2 = True
+        p1.cells["r2c2"] = True
     elif p2_tile_r2c3.active and p1.rect.colliderect(p2_tile_r2c3.rect):
         p2_tile_r2c3.active = False
-        p2.cell_r2c3 = False
+        p2.cells["r2c3"] = False
         p1_tile_r2c3.active = True
-        p1.cell_r2c3 = True
+        p1.cells["r2c3"] = True
     elif p2_tile_r2c4.active and p1.rect.colliderect(p2_tile_r2c4.rect):
         p2_tile_r2c4.active = False
-        p2.cell_r2c4 = False
+        p2.cells["r2c4"] = False
         p1_tile_r2c4.active = True
-        p1.cell_r2c4 = True
+        p1.cells["r2c4"] = True
     elif p2_tile_r2c5.active and p1.rect.colliderect(p2_tile_r2c5.rect):
         p2_tile_r2c5.active = False
-        p2.cell_r2c5 = False
+        p2.cells["r2c5"] = False
         p1_tile_r2c5.active = True
-        p1.cell_r2c5 = True
+        p1.cells["r2c5"] = True
     elif p2_tile_r2c6.active and p1.rect.colliderect(p2_tile_r2c6.rect):
         p2_tile_r2c6.active = False
-        p2.cell_r2c6 = False
+        p2.cells["r2c6"] = False
         p1_tile_r2c6.active = True
-        p1.cell_r2c6 = True
+        p1.cells["r2c6"] = True
     elif p2_tile_r3c1.active and p1.rect.colliderect(p2_tile_r3c1.rect):
         p2_tile_r3c1.active = False
-        p2.cell_r3c1 = False
+        p2.cells["r3c1"] = False
         p1_tile_r3c1.active = True
-        p1.cell_r3c1 = True
+        p1.cells["r3c1"] = True
     elif p2_tile_r3c2.active and p1.rect.colliderect(p2_tile_r3c2.rect):
         p2_tile_r3c2.active = False
-        p2.cell_r3c2 = False
+        p2.cells["r3c2"] = False
         p1_tile_r3c2.active = True
-        p1.cell_r3c2 = True
+        p1.cells["r3c2"] = True
     elif p2_tile_r3c3.active and p1.rect.colliderect(p2_tile_r3c3.rect):
         p2_tile_r3c3.active = False
-        p2.cell_r3c3 = False
+        p2.cells["r3c3"] = False
         p1_tile_r3c3.active = True
-        p1.cell_r3c3 = True
+        p1.cells["r3c3"] = True
     elif p2_tile_r3c4.active and p1.rect.colliderect(p2_tile_r3c4.rect):
         p2_tile_r3c4.active = False
-        p2.cell_r3c4 = False
+        p2.cells["r3c4"] = False
         p1_tile_r3c4.active = True
-        p1.cell_r3c4 = True
+        p1.cells["r3c4"] = True
     elif p2_tile_r3c5.active and p1.rect.colliderect(p2_tile_r3c5.rect):
         p2_tile_r3c5.active = False
-        p2.cell_r3c5 = False
+        p2.cells["r3c5"] = False
         p1_tile_r3c5.active = True
-        p1.cell_r3c5 = True
+        p1.cells["r3c5"] = True
     elif p2_tile_r3c6.active and p1.rect.colliderect(p2_tile_r3c6.rect):
         p2_tile_r3c6.active = False
-        p2.cell_r3c6 = False
+        p2.cells["r3c6"] = False
         p1_tile_r3c6.active = True
-        p1.cell_r3c6 = True
+        p1.cells["r3c6"] = True
     elif p2_tile_r4c1.active and p1.rect.colliderect(p2_tile_r4c1.rect):
         p2_tile_r4c1.active = False
-        p2.cell_r4c1 = False
+        p2.cells["r4c1"] = False
         p1_tile_r4c1.active = True
-        p1.cell_r4c1 = True
+        p1.cells["r4c1"] = True
     elif p2_tile_r4c2.active and p1.rect.colliderect(p2_tile_r4c2.rect):
         p2_tile_r4c2.active = False
-        p2.cell_r4c2 = False
+        p2.cells["r4c2"] = False
         p1_tile_r4c2.active = True
-        p1.cell_r4c2 = True
+        p1.cells["r4c2"] = True
     elif p2_tile_r4c3.active and p1.rect.colliderect(p2_tile_r4c3.rect):
         p2_tile_r4c3.active = False
-        p2.cell_r4c3 = False
+        p2.cells["r4c3"] = False
         p1_tile_r4c3.active = True
-        p1.cell_r4c3 = True
+        p1.cells["r4c3"] = True
     elif p2_tile_r4c4.active and p1.rect.colliderect(p2_tile_r4c4.rect):
         p2_tile_r4c4.active = False
-        p2.cell_r4c4 = False
+        p2.cells["r4c4"] = False
         p1_tile_r4c4.active = True
-        p1.cell_r4c4 = True
+        p1.cells["r4c4"] = True
     elif p2_tile_r4c5.active and p1.rect.colliderect(p2_tile_r4c5.rect):
         p2_tile_r4c5.active = False
-        p2.cell_r4c5 = False
+        p2.cells["r4c5"] = False
         p1_tile_r4c5.active = True
-        p1.cell_r4c5 = True
+        p1.cells["r4c5"] = True
     elif p2_tile_r4c6.active and p1.rect.colliderect(p2_tile_r4c6.rect):
         p2_tile_r4c6.active = False
-        p2.cell_r4c6 = False
+        p2.cells["r4c6"] = False
         p1_tile_r4c6.active = True
-        p1.cell_r4c6 = True
+        p1.cells["r4c6"] = True
     elif p2_tile_r5c1.active and p1.rect.colliderect(p2_tile_r5c1.rect):
         p2_tile_r5c1.active = False
-        p2.cell_r5c1 = False
+        p2.cells["r5c1"] = False
         p1_tile_r5c1.active = True
-        p1.cell_r5c1 = True
+        p1.cells["r5c1"] = True
     elif p2_tile_r5c2.active and p1.rect.colliderect(p2_tile_r5c2.rect):
         p2_tile_r5c2.active = False
-        p2.cell_r5c2 = False
+        p2.cells["r5c2"] = False
         p1_tile_r5c2.active = True
-        p1.cell_r5c2 = True
+        p1.cells["r5c2"] = True
     elif p2_tile_r5c3.active and p1.rect.colliderect(p2_tile_r5c3.rect):
         p2_tile_r5c3.active = False
-        p2.cell_r5c3 = False
+        p2.cells["r5c3"] = False
         p1_tile_r5c3.active = True
-        p1.cell_r5c3 = True
+        p1.cells["r5c3"] = True
     elif p2_tile_r5c4.active and p1.rect.colliderect(p2_tile_r5c4.rect):
         p2_tile_r5c4.active = False
-        p2.cell_r5c4 = False
+        p2.cells["r5c4"] = False
         p1_tile_r5c4.active = True
-        p1.cell_r5c4 = True
+        p1.cells["r5c4"] = True
     elif p2_tile_r5c5.active and p1.rect.colliderect(p2_tile_r5c5.rect):
         p2_tile_r5c5.active = False
-        p2.cell_r5c5 = False
+        p2.cells["r5c5"] = False
         p1_tile_r5c5.active = True
-        p1.cell_r5c5 = True
+        p1.cells["r5c5"] = True
     elif p2_tile_r5c6.active and p1.rect.colliderect(p2_tile_r5c6.rect):
         p2_tile_r5c6.active = False
-        p2.cell_r5c6 = False
+        p2.cells["r5c6"] = False
         p1_tile_r5c6.active = True
-        p1.cell_r5c6 = True
+        p1.cells["r5c6"] = True
     elif p2_tile_r6c1.active and p1.rect.colliderect(p2_tile_r6c1.rect):
         p2_tile_r6c1.active = False
-        p2.cell_r6c1 = False
+        p2.cells["r6c1"] = False
         p1_tile_r6c1.active = True
-        p1.cell_r6c1 = True
+        p1.cells["r6c1"] = True
     elif p2_tile_r6c2.active and p1.rect.colliderect(p2_tile_r6c2.rect):
         p2_tile_r6c2.active = False
-        p2.cell_r6c2 = False
+        p2.cells["r6c2"] = False
         p1_tile_r6c2.active = True
-        p1.cell_r6c2 = True
+        p1.cells["r6c2"] = True
     elif p2_tile_r6c3.active and p1.rect.colliderect(p2_tile_r6c3.rect):
         p2_tile_r6c3.active = False
-        p2.cell_r6c3 = False
+        p2.cells["r6c3"] = False
         p1_tile_r6c3.active = True
-        p1.cell_r6c3 = True
+        p1.cells["r6c3"] = True
     elif p2_tile_r6c4.active and p1.rect.colliderect(p2_tile_r6c4.rect):
         p2_tile_r6c4.active = False
-        p2.cell_r6c4 = False
+        p2.cells["r6c4"] = False
         p1_tile_r6c4.active = True
-        p1.cell_r6c4 = True
+        p1.cells["r6c4"] = True
     elif p2_tile_r6c5.active and p1.rect.colliderect(p2_tile_r6c5.rect):
         p2_tile_r6c5.active = False
-        p2.cell_r6c5 = False
+        p2.cells["r6c5"] = False
         p1_tile_r6c5.active = True
-        p1.cell_r6c5 = True
+        p1.cells["r6c5"] = True
     elif p2_tile_r6c6.active and p1.rect.colliderect(p2_tile_r6c6.rect):
         p2_tile_r6c6.active = False
-        p2.cell_r6c6 = False
+        p2.cells["r6c6"] = False
         p1_tile_r6c6.active = True
-        p1.cell_r6c6 = True
+        p1.cells["r6c6"] = True
 
     # player 2 collides with player 1 tiles
     if p1_tile_r1c1.active and p2.rect.colliderect(p1_tile_r1c1.rect):
         p1_tile_r1c1.active = False
-        p1.cell_r1c1 = False
+        p1.cells["r1c1"] = False
         p2_tile_r1c1.active = True
-        p2.cell_r1c1 = True
+        p2.cells["r1c1"] = True
     elif p1_tile_r1c2.active and p2.rect.colliderect(p1_tile_r1c2.rect):
         p1_tile_r1c2.active = False
-        p1.cell_r1c2 = False
+        p1.cells["r1c2"] = False
         p2_tile_r1c2.active = True
-        p2.cell_r1c2 = True
+        p2.cells["r1c2"] = True
     elif p1_tile_r1c3.active and p2.rect.colliderect(p1_tile_r1c3.rect):
         p1_tile_r1c3.active = False
-        p1.cell_r1c3 = False
+        p1.cells["r1c3"] = False
         p2_tile_r1c3.active = True
-        p2.cell_r1c3 = True
+        p2.cells["r1c3"] = True
     elif p1_tile_r1c4.active and p2.rect.colliderect(p1_tile_r1c4.rect):
         p1_tile_r1c4.active = False
-        p1.cell_r1c4 = False
+        p1.cells["r1c4"] = False
         p2_tile_r1c4.active = True
-        p2.cell_r1c4 = True
+        p2.cells["r1c4"] = True
     elif p1_tile_r1c5.active and p2.rect.colliderect(p1_tile_r1c5.rect):
         p1_tile_r1c5.active = False
-        p1.cell_r1c5 = False
+        p1.cells["r1c5"] = False
         p2_tile_r1c5.active = True
-        p2.cell_r1c5 = True
+        p2.cells["r1c5"] = True
     elif p1_tile_r1c6.active and p2.rect.colliderect(p1_tile_r1c6.rect):
         p1_tile_r1c6.active = False
-        p1.cell_r1c6 = False
+        p1.cells["r1c6"] = False
         p2_tile_r1c6.active = True
-        p2.cell_r1c6 = True
+        p2.cells["r1c6"] = True
     elif p1_tile_r2c1.active and p2.rect.colliderect(p1_tile_r2c1.rect):
         p1_tile_r2c1.active = False
-        p1.cell_r2c1 = False
+        p1.cells["r2c1"] = False
         p2_tile_r2c1.active = True
-        p2.cell_r2c1 = True
+        p2.cells["r2c1"] = True
     elif p1_tile_r2c2.active and p2.rect.colliderect(p1_tile_r2c2.rect):
         p1_tile_r2c2.active = False
-        p1.cell_r2c2 = False
+        p1.cells["r2c2"] = False
         p2_tile_r2c2.active = True
-        p2.cell_r2c2 = True
+        p2.cells["r2c2"] = True
     elif p1_tile_r2c3.active and p2.rect.colliderect(p1_tile_r2c3.rect):
         p1_tile_r2c3.active = False
-        p1.cell_r2c3 = False
+        p1.cells["r2c3"] = False
         p2_tile_r2c3.active = True
-        p2.cell_r2c3 = True
+        p2.cells["r2c3"] = True
     elif p1_tile_r2c4.active and p2.rect.colliderect(p1_tile_r2c4.rect):
         p1_tile_r2c4.active = False
-        p1.cell_r2c4 = False
+        p1.cells["r2c4"] = False
         p2_tile_r2c4.active = True
-        p2.cell_r2c4 = True
+        p2.cells["r2c4"] = True
     elif p1_tile_r2c5.active and p2.rect.colliderect(p1_tile_r2c5.rect):
         p1_tile_r2c5.active = False
-        p1.cell_r2c5 = False
+        p1.cells["r2c5"] = False
         p2_tile_r2c5.active = True
-        p2.cell_r2c5 = True
+        p2.cells["r2c5"] = True
     elif p1_tile_r2c6.active and p2.rect.colliderect(p1_tile_r2c6.rect):
         p1_tile_r2c6.active = False
-        p1.cell_r2c6 = False
+        p1.cells["r2c6"] = False
         p2_tile_r2c6.active = True
-        p2.cell_r2c6 = True
+        p2.cells["r2c6"] = True
     elif p1_tile_r3c1.active and p2.rect.colliderect(p1_tile_r3c1.rect):
         p1_tile_r3c1.active = False
-        p1.cell_r3c1 = False
+        p1.cells["r3c1"] = False
         p2_tile_r3c1.active = True
-        p2.cell_r3c1 = True
+        p2.cells["r3c1"] = True
     elif p1_tile_r3c2.active and p2.rect.colliderect(p1_tile_r3c2.rect):
         p1_tile_r3c2.active = False
-        p1.cell_r3c2 = False
+        p1.cells["r3c2"] = False
         p2_tile_r3c2.active = True
-        p2.cell_r3c2 = True
+        p2.cells["r3c2"] = True
     elif p1_tile_r3c3.active and p2.rect.colliderect(p1_tile_r3c3.rect):
         p1_tile_r3c3.active = False
-        p1.cell_r3c3 = False
+        p1.cells["r3c3"] = False
         p2_tile_r3c3.active = True
-        p2.cell_r3c3 = True
+        p2.cells["r3c3"] = True
     elif p1_tile_r3c4.active and p2.rect.colliderect(p1_tile_r3c4.rect):
         p1_tile_r3c4.active = False
-        p1.cell_r3c4 = False
+        p1.cells["r3c4"] = False
         p2_tile_r3c4.active = True
-        p2.cell_r3c4 = True
+        p2.cells["r3c4"] = True
     elif p1_tile_r3c5.active and p2.rect.colliderect(p1_tile_r3c5.rect):
         p1_tile_r3c5.active = False
-        p1.cell_r3c5 = False
+        p1.cells["r3c5"] = False
         p2_tile_r3c5.active = True
-        p2.cell_r3c5 = True
+        p2.cells["r3c5"] = True
     elif p1_tile_r3c6.active and p2.rect.colliderect(p1_tile_r3c6.rect):
         p1_tile_r3c6.active = False
-        p1.cell_r3c6 = False
+        p1.cells["r3c6"] = False
         p2_tile_r3c6.active = True
-        p2.cell_r3c6 = True
+        p2.cells["r3c6"] = True
     elif p1_tile_r4c1.active and p2.rect.colliderect(p1_tile_r4c1.rect):
         p1_tile_r4c1.active = False
-        p1.cell_r4c1 = False
+        p1.cells["r4c1"] = False
         p2_tile_r4c1.active = True
-        p2.cell_r4c1 = True
+        p2.cells["r4c1"] = True
     elif p1_tile_r4c2.active and p2.rect.colliderect(p1_tile_r4c2.rect):
         p1_tile_r4c2.active = False
-        p1.cell_r4c2 = False
+        p1.cells["r4c2"] = False
         p2_tile_r4c2.active = True
-        p2.cell_r4c2 = True
+        p2.cells["r4c2"] = True
     elif p1_tile_r4c3.active and p2.rect.colliderect(p1_tile_r4c3.rect):
         p1_tile_r4c3.active = False
-        p1.cell_r4c3 = False
+        p1.cells["r4c3"] = False
         p2_tile_r4c3.active = True
-        p2.cell_r4c3 = True
+        p2.cells["r4c3"] = True
     elif p1_tile_r4c4.active and p2.rect.colliderect(p1_tile_r4c4.rect):
         p1_tile_r4c4.active = False
-        p1.cell_r4c4 = False
+        p1.cells["r4c4"] = False
         p2_tile_r4c4.active = True
-        p2.cell_r4c4 = True
+        p2.cells["r4c4"] = True
     elif p1_tile_r4c5.active and p2.rect.colliderect(p1_tile_r4c5.rect):
         p1_tile_r4c5.active = False
-        p1.cell_r4c5 = False
+        p1.cells["r4c5"] = False
         p2_tile_r4c5.active = True
-        p2.cell_r4c5 = True
+        p2.cells["r4c5"] = True
     elif p1_tile_r4c6.active and p2.rect.colliderect(p1_tile_r4c6.rect):
         p1_tile_r4c6.active = False
-        p1.cell_r4c6 = False
+        p1.cells["r4c6"] = False
         p2_tile_r4c6.active = True
-        p2.cell_r4c6 = True
+        p2.cells["r4c6"] = True
     elif p1_tile_r5c1.active and p2.rect.colliderect(p1_tile_r5c1.rect):
         p1_tile_r5c1.active = False
-        p1.cell_r5c1 = False
+        p1.cells["r5c1"] = False
         p2_tile_r5c1.active = True
-        p2.cell_r5c1 = True
+        p2.cells["r5c1"] = True
     elif p1_tile_r5c2.active and p2.rect.colliderect(p1_tile_r5c2.rect):
         p1_tile_r5c2.active = False
-        p1.cell_r5c2 = False
+        p1.cells["r5c2"] = False
         p2_tile_r5c2.active = True
-        p2.cell_r5c2 = True
+        p2.cells["r5c2"] = True
     elif p1_tile_r5c3.active and p2.rect.colliderect(p1_tile_r5c3.rect):
         p1_tile_r5c3.active = False
-        p1.cell_r5c3 = False
+        p1.cells["r5c3"] = False
         p2_tile_r5c3.active = True
-        p2.cell_r5c3 = True
+        p2.cells["r5c3"] = True
     elif p1_tile_r5c4.active and p2.rect.colliderect(p1_tile_r5c4.rect):
         p1_tile_r5c4.active = False
-        p1.cell_r5c4 = False
+        p1.cells["r5c4"] = False
         p2_tile_r5c4.active = True
-        p2.cell_r5c4 = True
+        p2.cells["r5c4"] = True
     elif p1_tile_r5c5.active and p2.rect.colliderect(p1_tile_r5c5.rect):
         p1_tile_r5c5.active = False
-        p1.cell_r5c5 = False
+        p1.cells["r5c5"] = False
         p2_tile_r5c5.active = True
-        p2.cell_r5c5 = True
+        p2.cells["r5c5"] = True
     elif p1_tile_r5c6.active and p2.rect.colliderect(p1_tile_r5c6.rect):
         p1_tile_r5c6.active = False
-        p1.cell_r5c6 = False
+        p1.cells["r5c6"] = False
         p2_tile_r5c6.active = True
-        p2.cell_r5c6 = True
+        p2.cells["r5c6"] = True
     elif p1_tile_r6c1.active and p2.rect.colliderect(p1_tile_r6c1.rect):
         p1_tile_r6c1.active = False
-        p1.cell_r6c1 = False
+        p1.cells["r6c1"] = False
         p2_tile_r6c1.active = True
-        p2.cell_r6c1 = True
+        p2.cells["r6c1"] = True
     elif p1_tile_r6c2.active and p2.rect.colliderect(p1_tile_r6c2.rect):
         p1_tile_r6c2.active = False
-        p1.cell_r6c2 = False
+        p1.cells["r6c2"] = False
         p2_tile_r6c2.active = True
-        p2.cell_r6c2 = True
+        p2.cells["r6c2"] = True
     elif p1_tile_r6c3.active and p2.rect.colliderect(p1_tile_r6c3.rect):
         p1_tile_r6c3.active = False
-        p1.cell_r6c3 = False
+        p1.cells["r6c3"] = False
         p2_tile_r6c3.active = True
-        p2.cell_r6c3 = True
+        p2.cells["r6c3"] = True
     elif p1_tile_r6c4.active and p2.rect.colliderect(p1_tile_r6c4.rect):
         p1_tile_r6c4.active = False
-        p1.cell_r6c4 = False
+        p1.cells["r6c4"] = False
         p2_tile_r6c4.active = True
-        p2.cell_r6c4 = True
+        p2.cells["r6c4"] = True
     elif p1_tile_r6c5.active and p2.rect.colliderect(p1_tile_r6c5.rect):
         p1_tile_r6c5.active = False
-        p1.cell_r6c5 = False
+        p1.cells["r6c5"] = False
         p2_tile_r6c5.active = True
-        p2.cell_r6c5 = True
+        p2.cells["r6c5"] = True
     elif p1_tile_r6c6.active and p2.rect.colliderect(p1_tile_r6c6.rect):
         p1_tile_r6c6.active = False
-        p1.cell_r6c6 = False
+        p1.cells["r6c6"] = False
         p2_tile_r6c6.active = True
-        p2.cell_r6c6 = True
+        p2.cells["r6c6"] = True
 
     p1_tile_r1c1.draw()
     p1_tile_r1c2.draw()
@@ -774,8 +774,8 @@ def tile_placement():
 
 ##----------------------------PLAYER----------------------------##
 
-p1 = Player("mar", 1)
-p2 = Player("pea", 2)
+p1 = Player("mar", 1, False)
+p2 = Player("pea", 2, True)
 
 def player_overlapping():
     if p1.return_row_number() - p2.return_row_number() > 0:  # p2 overlaps p1
@@ -952,8 +952,7 @@ def player_collision():
 
 p2_as_cpu = True
 def move_cpu_opponent():
-    cpu_opponent.position_finder()
-    direction = cpu_opponent.check_surrounding_tiles("easy")
+    direction = cpu_opponent.check_surrounding_tiles("hard")
     if p2.key_pressed != True:
         if direction == "up":
             p2.up = True
