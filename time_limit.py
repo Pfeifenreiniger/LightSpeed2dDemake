@@ -1,16 +1,13 @@
 
 import pygame
+
 pygame.init()
-
-SCREEN = pygame.display.set_mode((800, 600))
-mario64_font = pygame.font.Font("font/Super-Mario-64-DS.ttf", 20)
 marioKart_font = pygame.font.Font("font/Mario-Kart-DS.ttf", 50)
+SCREEN = pygame.display.set_mode((800, 600))
 
-LIMIT_TIME = 0
-
-def display_time_limit(time_limit: int):
+def display_time_limit(time_limit: int, limit_time=0):
     """function returns false when time limit is over"""
-    current_time = int(time_limit - ((pygame.time.get_ticks() / 1000) - LIMIT_TIME))
+    current_time = int(time_limit - ((pygame.time.get_ticks() - limit_time) / 1000))
     font = marioKart_font
     if current_time <= 10:
         time_color = (255, 0, 0)

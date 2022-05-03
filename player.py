@@ -247,48 +247,11 @@ class Player(pygame.sprite.Sprite):
         }
 
     def calculate_score(self):
-        pass
-        # self.cells = [
-        #     self.cell_r1c1,
-        #     self.cell_r1c2,
-        #     self.cell_r1c3,
-        #     self.cell_r1c4,
-        #     self.cell_r1c5,
-        #     self.cell_r1c6,
-        #     self.cell_r2c1,
-        #     self.cell_r2c2,
-        #     self.cell_r2c3,
-        #     self.cell_r2c4,
-        #     self.cell_r2c5,
-        #     self.cell_r2c6,
-        #     self.cell_r3c1,
-        #     self.cell_r3c2,
-        #     self.cell_r3c3,
-        #     self.cell_r3c4,
-        #     self.cell_r3c5,
-        #     self.cell_r3c6,
-        #     self.cell_r4c1,
-        #     self.cell_r4c2,
-        #     self.cell_r4c3,
-        #     self.cell_r4c4,
-        #     self.cell_r4c5,
-        #     self.cell_r4c6,
-        #     self.cell_r5c1,
-        #     self.cell_r5c2,
-        #     self.cell_r5c3,
-        #     self.cell_r5c4,
-        #     self.cell_r5c5,
-        #     self.cell_r5c6,
-        #     self.cell_r6c1,
-        #     self.cell_r6c2,
-        #     self.cell_r6c3,
-        #     self.cell_r6c4,
-        #     self.cell_r6c5,
-        #     self.cell_r6c6
-        # ]
-        # for cell in self.cells:
-        #     if cell == True:
-        #         self.score += 1
+        if self.calculated != True:
+            for cell in self.cells.values():
+                if cell:
+                    self.score += 1
+            self.calculated = True
 
     def scale_imgs(self):
         self.load_img_shadow()
@@ -1148,4 +1111,5 @@ class Player(pygame.sprite.Sprite):
         else:
             self.shadow_scale = (72, 56)
         self.animation_counter = 0
-        self.update()
+        self.calculated = False
+        self.load_rect()
