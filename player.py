@@ -128,6 +128,18 @@ class Player(pygame.sprite.Sprite):
     def load_rect(self):
         self.rect = pygame.rect.Rect(self.x, (round(self.y) + (round(self.img_scale[1]/4))), self.img_scale[0], round(self.img_scale[1]/1.5))
 
+    def load_crash_sfx(self):
+        self.crash_sfx = pygame.mixer.Sound(f"voices/{self.char}/mparty5_{self.char}_crash.wav")
+        self.crash_sfx.set_volume(0.7)
+
+    def load_hovercraft_sfx(self):
+        self.hovercraft_sfx = pygame.mixer.Sound("sfx/game/hovercraft_sfx.mp3")
+        self.hovercraft_sfx.set_volume(0.3)
+
+    def load_teleport_sfx(self):
+        self.teleport_sfx = pygame.mixer.Sound("sfx/game/ssbm_electric.wav")
+        self.teleport_sfx.set_volume(0.5)
+
     def set_direction(self):
         self.up = False
         if self.numb == 2:
@@ -296,12 +308,11 @@ class Player(pygame.sprite.Sprite):
         self.current_imgs[0] = pygame.transform.smoothscale(self.current_imgs[0], self.img_scale)
         self.current_imgs[1] = pygame.transform.smoothscale(self.current_imgs[1], self.img_scale)
         self.draw_player()
+        self.teleport_sfx.play()
 
     def draw_player(self):
         SCREEN.blit(self.shadow_img, (self.x - round(self.shadow_scale[0]/14), self.y + round(self.shadow_scale[1]/5)))
         SCREEN.blit(self.current_imgs[round(self.animation_counter)], (self.x, self.y))
-        #pygame.draw.rect(SCREEN, (000, 000, 000), self.rect)
-        #print(f"Player number {self.numb} at {self.rect.bottom}")
 
     def player_input(self):
         """Keyboard controls for up to two players simultaneously at one keyboard"""
@@ -384,6 +395,7 @@ class Player(pygame.sprite.Sprite):
             self.move_speed = 4
 
     def movement(self):
+        self.play_hovercraft_sfx()
         if self.key_pressed:
             self.scale_move_speed()
             if self.key_direction == UP:
@@ -1079,6 +1091,14 @@ class Player(pygame.sprite.Sprite):
                         self.x += 0.75
                 self.y += self.move_speed
 
+    def play_hovercraft_sfx(self):
+        if self.key_pressed and self.hovercraft_sfx_started != True:
+            self.hovercraft_sfx.play()
+            self.hovercraft_sfx_started = True
+        elif self.key_direction == "":
+            self.hovercraft_sfx.stop()
+            self.hovercraft_sfx_started = False
+
     def update(self):
         self.load_rect()
         self.scale_imgs()
@@ -1100,6 +1120,10 @@ class Player(pygame.sprite.Sprite):
         self.set_columns()
         self.set_cells()
         self.scale_move_speed()
+        self.load_crash_sfx()
+        self.load_hovercraft_sfx()
+        self.load_teleport_sfx()
+        self.hovercraft_sfx_started = False
         self.key_pressed = False
         self.key_direction = ""
         if self.numb == 1:

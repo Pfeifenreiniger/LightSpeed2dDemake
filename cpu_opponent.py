@@ -310,24 +310,20 @@ def check_surrounding_tiles(difficulty: str, p1, p2):
     }
 
     if difficulty == "easy":
-        # in easy or hard difficulty a 10% chance that the cpu will take a random direction despite the prio
+        # in easy or hard difficulty a 50% chance that the cpu will take a random direction despite the prio
+        if random.randint(1, 200) < 101:
+            return random.choice(["up", "left", "right", "down"])
+        else:
+            return random.choice(max_prio_direct)
+    # in hard difficulty a 20% chance
+    elif difficulty == "hard":
+        if random.randint(1, 200) < 41:
+            return random.choice(["up", "left", "right", "down"])
+        else:
+            return random.choice(max_prio_direct)
+    # in very hard difficulty a 10% chance
+    elif difficulty == "very hard":
         if random.randint(1, 200) < 21:
             return random.choice(["up", "left", "right", "down"])
         else:
             return random.choice(max_prio_direct)
-    # in hard difficulty a 5% chance
-    elif difficulty == "hard":
-        if random.randint(1, 200) < 11:
-            return random.choice(["up", "left", "right", "down"])
-        else:
-            return random.choice(max_prio_direct)
-    # in very hard difficulty a 1% chance
-    elif difficulty == "very hard":
-        if random.randint(1, 200) < 3:
-            return random.choice(["up", "left", "right", "down"])
-        else:
-            return random.choice(max_prio_direct)
-
-
-
-

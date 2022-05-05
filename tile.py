@@ -110,7 +110,6 @@ class Tile(pygame.sprite.Sprite):
     def draw(self):
         if self.active:
             SCREEN.blit(self.img, (self.x, self.y))
-            #pygame.draw.rect(SCREEN, (000, 000, 000), self.rect)
 
     def destroy(self):
         self.kill()

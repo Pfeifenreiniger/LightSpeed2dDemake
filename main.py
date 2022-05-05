@@ -4,7 +4,7 @@ https://www.mariowiki.com/Light_Speed
 Code and graphics by Kevin Spathmann (Pfeifenreiniger on GitHub: https://github.com/Pfeifenreiniger)
 Fonts used: "Mario Kart DS" by David (https://www.dafont.com/mario-kart-ds.font)
             "Super Mario 64 DS" by David (https://www.dafont.com/super-mario-64-ds.font)
-Musics, SFX, and voices used from Nintendo™ originals (like Mario Party 3, 5, and 7, Super Smash Bros. 64 or Super Mario 64)
+Musics, SFX, and voices used from Nintendo™ originals (like Mario Party 3, 5, and 7, Super Smash Bros. 64 or Super Mario 64) and freesfx.co.uk
 Original Game (included in Mario Party 7) by Hudson Soft™ and Nintendo™
 '''
 
@@ -794,7 +794,7 @@ if __name__ == "__main__":
         for tile in p2_tiles:
             tile.active = False
 
-    ##----------------------------GAME SFX----------------------------##
+    ##----------------------------GAME MUSIC----------------------------##
     game_music = pygame.mixer.Sound("music/mparty7_Cool_as_a_Cucumber.mp3")
     game_music.set_volume(0.8)
 
@@ -877,6 +877,10 @@ if __name__ == "__main__":
                         p1.down = True
                         p1.key_direction = DOWN
             vertical_collision = False
+
+        # crash sfx
+        p1.crash_sfx.play()
+        p2.crash_sfx.play()
 
 
 
@@ -1040,12 +1044,6 @@ if __name__ == "__main__":
                 running = False
                 pygame.quit()
                 sys.exit()
-            # if event.type == pygame.KEYDOWN:
-            #     if event.key == pygame.K_SPACE:
-            #         p1.calculate_score()
-            #         print(f"Player 1 has {p1.score} points")
-            #         p2.calculate_score()
-            #         print(f"Player 2 has {p2.score} points")
 
             # non-active game -> browsing the menus
             if game_active != True:
@@ -1094,7 +1092,6 @@ if __name__ == "__main__":
             if p2_as_cpu:
                 move_cpu_opponent("very hard", p1, p2)
 
-            #print(math.hypot(p1.x - p2.x, p1.y - p2.y))
             player_collision()
 
         else: # menu screens
@@ -1134,6 +1131,8 @@ if __name__ == "__main__":
             else:
                 if menu.score_music_played != True:
                     game_music.stop()
+                    p1.hovercraft_sfx.stop()
+                    p2.hovercraft_sfx.stop()
                     menu.score_music.play(loops=-1)
                     menu.score_music_played = True
 
@@ -1141,7 +1140,7 @@ if __name__ == "__main__":
                 score_message_surf_p1 = menu.mario64_font.render(f"P1: {str(p1.score)} {'tiles' if p1.score > 1 else 'tile'}", False, (25, 25, 25))
                 score_message_rect_p1 = score_message_surf_p1.get_rect(center=(400, 110))
                 p2.calculate_score()
-                score_message_surf_p2 = menu.mario64_font.render(f"P1: {str(p2.score)} {'tiles' if p2.score > 1 else 'tile'}", False, (25, 25, 25))
+                score_message_surf_p2 = menu.mario64_font.render(f"P2: {str(p2.score)} {'tiles' if p2.score > 1 else 'tile'}", False, (25, 25, 25))
                 score_message_rect_p2 = score_message_surf_p2.get_rect(center=(400, 194))
 
                 menu.display_score_screen()

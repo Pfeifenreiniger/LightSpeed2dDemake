@@ -32,15 +32,15 @@ sfx_score_screen = pygame.mixer.Sound("sfx/menu/sm64_high_score.wav")
 sfx_score_screen.set_volume(0.8)
 sfx_score_screen_played = False
 
-voice_mario_selected = pygame.mixer.Sound("voices/mario/sm64_mario_its_me_(selected).wav")
+voice_mario_selected = pygame.mixer.Sound("voices/mar/sm64_mario_its_me_(selected).wav")
 voice_mario_selected.set_volume(0.5)
-voice_peach_selected = pygame.mixer.Sound("voices/peach/mparty5_hooray_(selected).wav")
+voice_peach_selected = pygame.mixer.Sound("voices/pea/mparty5_hooray_(selected).wav")
 voice_peach_selected.set_volume(0.5)
-voice_yoshi_selected = pygame.mixer.Sound("voices/yoshi/mparty5_yoshi_yooshi_(selected).wav")
+voice_yoshi_selected = pygame.mixer.Sound("voices/yos/mparty5_yoshi_yooshi_(selected).wav")
 voice_yoshi_selected.set_volume(0.5)
-voice_waluigi_selected1 = pygame.mixer.Sound("voices/waluigi/mparty5_waluigi_whoahaha_(selected).wav")
+voice_waluigi_selected1 = pygame.mixer.Sound("voices/wal/mparty5_waluigi_whoahaha_(selected).wav")
 voice_waluigi_selected1.set_volume(0.5)
-voice_waluigi_selected2 = pygame.mixer.Sound("voices/waluigi/mparty5_waluigi_good_choice_(selected).wav")
+voice_waluigi_selected2 = pygame.mixer.Sound("voices/wal/mparty5_waluigi_good_choice_(selected).wav")
 voice_waluigi_selected2.set_volume(0.5)
 
 ## menu graphics ##
@@ -129,20 +129,6 @@ def char_selected_reset():
     p2_char_select.y = 50
     p2_char_select.pressed = False
 
-    # if p1_char_select.character != "":
-    #     p1_char = False
-    #     p1_char_select.character = ""
-    #     p1_char_select.cpu_character = ""
-    #     p1_char_select.x = 288
-    #     p1_char_select.y = 50
-    #     p1_char_select.pressed = False
-    # if p2_char_select.character != "" or p1_char_select.cpu_character != "":
-    #     p2_char = False
-    #     p2_char_select.character = ""
-    #     p1_char_select.cpu_character = ""
-    #     p2_char_select.x = 305
-    #     p2_char_select.y = 50
-    #     p2_char_select.pressed = False
 
 p1_rect_color = (255, 0, 0)
 p2_rect_color = (0, 26, 255)
